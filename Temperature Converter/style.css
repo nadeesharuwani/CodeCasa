@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  width:100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(37, 35, 37);
+  color: black;
+  font-size: 1rem;
+}
+.temperature-converter{
+  background-color: beige;
+  width:100%;
+  min-width:320px;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.title{
+  font-size: 1.5rem;
+  text-align: center;
+  color:black;
+}
+.result{
+  text-align: center;
+  margin: 20px 0;
+}
+.heading{
+  color:rgb(37, 37, 37);
+  font-weight: 800;
+  font-size: 1rem;
+}
+.celsius-value{
+  border-bottom: 2px solid rgb(53, 52, 52);
+  padding: 20px;
+  transition: all ,-45s ease;
+}
+.degree-type{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.degree-feild{
+  display: flex;
+  flex-direction: column;
+  width:45%;
+}
+input ,select{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid  rgb(90, 88, 88);
+  padding: 8px;
+  margin-bottom: 20px;
+}
+.temp-feild{
+  position: absolute;
+  left:50%;
+  top:52%;
+}
+input:focus{
+  border:1px solid rgb(64, 64, 102)
+}
+option{
+  background-color: rgb(72, 72, 126);
+}
+#convert{
+  background-color: rgb(81, 81, 160);
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.7rem;
+  outline: none;
+  border: none;
+  height: 30px;
+  
+}
+
+#convert:hover{
+  background-color: rgb(39, 38, 38);
+}
